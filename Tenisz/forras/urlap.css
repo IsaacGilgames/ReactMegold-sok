@@ -1,0 +1,58 @@
+.urlap h1 {
+    font-size: 2.5em;
+    color: #064635;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.urlap {
+    margin:  10px auto !important;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 60vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 15vh;
+    border: 2px solid #064635;
+}
+
+.urlap label {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    display: block;
+    color: #064635;
+    font-weight: bold;
+}
+
+.urlap select, .urlap input {
+    padding: 12px;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #064635;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+
+.urlap button {
+    background-color: #ffcc00;
+    color: #064635;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+}
+
+.urlap button:hover {
+    background-color: #e6b800;
+}

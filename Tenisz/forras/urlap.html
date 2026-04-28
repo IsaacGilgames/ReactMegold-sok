@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="urlap.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Jelentkezés</title>
+</head>
+
+<body>
+    <div class='urlap'>
+
+        <h1>Válaszd ki, melyik versenyszámban szeretnél indulni!</h1>
+
+
+        <div class="container vertical center">
+            <div class="title">Nevezési LAP</div>
+            <div class="content vertical center">
+                <div class="field horizontal center">
+                    <label>Név:</label>
+                    <input type="text" id="persons">
+
+                </div>
+
+                <div class="field horizontal center">
+                    <label>Születési idő:</label>
+                    <input type="date" id="birthDate" class="form-control mt-2">
+                </div>
+                <div class="field horizontal center">
+                    <label htmlFor="category">Versenykategória:</label>
+                    <select id="category" class="form-control">
+                        <option value="amatőr">Amatőr</option>
+                        <option value="profi">Profi</option>
+                        <option value="veterán">Veterán</option>
+                    </select>
+                </div>
+                <div class="field horizontal center">
+                    <label>Győzelem</label>
+                    <input type="number" id="persons" min="1" >
+                </div>
+                <div class="field horizontal center">
+                    <label>Kép:</label>
+                    <input id="url" type="url">
+                </div>
+
+                <div class="horizontal center">
+                    <div></div>
+                    <button id="saveButton" title="Bérlés rögzítése">MENTÉS</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

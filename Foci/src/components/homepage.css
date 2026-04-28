@@ -1,0 +1,158 @@
+.OpenPage {
+    background-image: url("pexels-pixabay-47730.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: auto;
+      height: 100vh;
+
+  }
+
+
+  
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnimation 1s ease-in-out forwards;
+  }
+  
+  
+  .delay-0 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-1 {
+    animation-delay: 0.6s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .jumbotron {
+    margin: 25vh auto 0;
+  }
+
+
+  .urlap h1 {
+    font-size: 2.5em;
+    color: #064635;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.urlap {
+    margin:  10px auto !important;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 60vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 15vh;
+    border: 2px solid #064635;
+}
+
+.urlap label {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    display: block;
+    color: #064635;
+    font-weight: bold;
+}
+
+.urlap select, .urlap input {
+    padding: 12px;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #064635;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+
+.urlap button {
+    background-color: #ffcc00;
+    color: #064635;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+}
+
+.urlap button:hover {
+    background-color: #e6b800;
+}
+
+.foci-checkbox {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  color: #2c3e50;
+  display: inline-block;
+  line-height: 24px;
+}
+
+.foci-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.foci-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #e6e6e6;
+  border-radius: 6px;
+  border: 2px solid #28a745;
+  transition: all 0.3s ease;
+}
+
+.foci-checkbox input:checked ~ .checkmark {
+  background-color: #28a745; /* zöld pályaszín */
+  box-shadow: 0 0 5px #28a74588;
+}
+
+.foci-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.foci-checkbox input:checked ~ .checkmark::after {
+  display: block;
+  left: 8px;
+  top: 4px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

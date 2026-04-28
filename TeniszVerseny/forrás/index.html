@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regisztrációs űrlap</title>
+    <link rel="stylesheet" href="Regist.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Szerva be, kifogás ki!</h2>
+    <p class="slogan">"Játék. Szett. Győzelem."</p>
+
+    <form>
+      <!-- Első versenyző -->
+      <div class="form-group">
+        <label>Teljes név</label>
+        <input type="text" name="name" placeholder="Minta János" required>
+      </div>
+
+      <div class="form-group">
+        <label>Kategória</label>
+        <select name="category">
+          <option value="beginner">Kezdő</option>
+          <option value="advanced">Haladó</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Versenyzői azonosító</label>
+        <input type="text" name="azon" placeholder="AB12345">
+      </div>
+
+      <div class="form-group">
+        <label>Születési dátum</label>
+        <input type="date" name="birthday">
+      </div>
+
+      <div class="form-group">
+        <label>Csapatban szeretne versenyezni?</label>
+        <input type="checkbox" name="paros">
+      </div>
+
+      <!-- Második versenyző (csapat) -->
+      <div class="form-group">
+        <label>Teljes név (második csapattag)</label>
+        <input type="text" name="name2" placeholder="Minta János">
+      </div>
+
+      <div class="form-group">
+        <label>Versenyzői azonosító (második csapattag)</label>
+        <input type="text" name="azon2" placeholder="AB12345">
+      </div>
+
+      <button type="submit" class="submit-btn">Jelentkezés beküldése</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.OpenPage {
+  background-image: url("pexels-todd-trapani-488382-2352372.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+
+.delay-0 {
+  animation-delay: 0.3s;
+}
+
+.delay-1 {
+  animation-delay: 0.6s;
+}
+
+.delay-2 {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.jumbotron {
+  margin: 25vh auto 0;
+}

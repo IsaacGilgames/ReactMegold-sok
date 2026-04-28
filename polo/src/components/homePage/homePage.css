@@ -1,0 +1,88 @@
+body {
+    background-color: #f8f9fa;
+  }
+
+  .form-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnimation 1s ease-in-out forwards;
+  }
+
+  .image-section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  }
+
+  .image-section .btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: 768px) {
+    .image-section {
+      height: 50vh;
+    }
+  }
+
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .urlap {
+    margin:  10px auto !important;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin: auto;
+    margin-top: 15vh;
+    border: 2px solid #192A51;
+}
+
+.urlap label {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    display: block;
+    color: #192A51;
+    font-weight: bold;
+}
+
+.urlap select, .urlap input {
+    padding: 12px;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #192A51;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+
+  
+  #shirt-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    color: #2c3e50;
+  }
